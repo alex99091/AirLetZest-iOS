@@ -1,4 +1,4 @@
-# AirLetZest-iOS
+# FlightTicket-iOS
 
 This is a new designed app to test collection View and business logic, by getting data from [OPEN Flight API](https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15000126)
 
