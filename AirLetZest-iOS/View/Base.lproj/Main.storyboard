@@ -32,33 +32,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Gew-aa-13b" userLabel="LabelStackView">
-                                <rect key="frame" x="10" y="200" width="394" height="632"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gew-aa-13b" userLabel="LabelStackView">
+                                <rect key="frame" x="10" y="220" width="394" height="612"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOK YOUR FLIGHT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVa-Gk-Hfp" userLabel="IntroductionLabel">
-                                        <rect key="frame" x="66.5" y="0.0" width="261" height="31"/>
-                                        <color key="tintColor" red="0.2901960784" green="0.2901960784" blue="0.73725490199999999" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
-                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.73725490199999999" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="p1o-dR-aNI" userLabel="SearchDataStackView">
-                                        <rect key="frame" x="30" y="38" width="334" height="594"/>
+                                        <rect key="frame" x="30" y="0.0" width="334" height="612"/>
                                         <subviews>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tvZ-tI-y8z">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="32"/>
-                                                <color key="backgroundColor" red="0.66666666669999997" green="0.90980392160000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <segments>
-                                                    <segment title="ONE WAY"/>
-                                                    <segment title="ROUND TRIP"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.66666666669999997" green="0.90980392160000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="selectedSegmentTintColor" red="0.66666666669999997" green="0.90980392160000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="항공권을 쉽게 검색하세요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVa-Gk-Hfp" userLabel="IntroductionLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
+                                                <color key="tintColor" red="0.2901960784" green="0.2901960784" blue="0.73725490199999999" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.73725490199999999" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="DTd-HX-hGE" userLabel="DepartStackView">
-                                                <rect key="frame" x="0.0" y="62" width="334" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="56.5" width="334" height="50.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text=" From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSQ-NW-ef3">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="출발지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSQ-NW-ef3">
                                                         <rect key="frame" x="0.0" y="0.0" width="334" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
@@ -69,13 +59,16 @@
                                                         <color key="backgroundColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.93725490199999995" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="showDeparts:" destination="AIN-9l-cS5" eventType="editingDidEnd" id="xZP-NQ-qIi"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="36s-0w-ace" userLabel="ArriveStackView">
-                                                <rect key="frame" x="0.0" y="143" width="334" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="132.5" width="334" height="50.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2A-9i-43v">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="도착지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2A-9i-43v">
                                                         <rect key="frame" x="0.0" y="0.0" width="334" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
@@ -90,9 +83,9 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="GA8-kO-gBB" userLabel="DepartDateStackView">
-                                                <rect key="frame" x="0.0" y="224.5" width="334" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="208" width="334" height="50.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Departs Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwT-KK-8lz">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="출발일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwT-KK-8lz">
                                                         <rect key="frame" x="0.0" y="0.0" width="334" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
@@ -107,9 +100,9 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="miB-l7-R7l" userLabel="ArriveDateStackView">
-                                                <rect key="frame" x="0.0" y="306" width="334" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="284" width="334" height="50.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Returns Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-55-JDQ">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="도착일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-55-JDQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="334" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
@@ -124,9 +117,9 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="p94-eJ-5y8" userLabel="PassengerStackView">
-                                                <rect key="frame" x="0.0" y="387.5" width="334" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="360" width="334" height="50.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Passengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYg-P6-qYI">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="탑승 인원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYg-P6-qYI">
                                                         <rect key="frame" x="0.0" y="0.0" width="334" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
@@ -141,9 +134,9 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="8OG-vL-wok" userLabel="ClassStackView">
-                                                <rect key="frame" x="0.0" y="468.5" width="334" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="436" width="334" height="50.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyJ-Ex-P94">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="좌석 등급" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyJ-Ex-P94">
                                                         <rect key="frame" x="0.0" y="0.0" width="334" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
@@ -157,16 +150,29 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="tvZ-tI-y8z">
+                                                <rect key="frame" x="0.0" y="511.5" width="334" height="32"/>
+                                                <color key="backgroundColor" red="0.66666666669999997" green="0.90980392160000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <segments>
+                                                    <segment title="편도"/>
+                                                    <segment title="왕복"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.66666666669999997" green="0.90980392160000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="selectedSegmentTintColor" red="0.66666666669999997" green="0.90980392160000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeZ-57-sMf">
-                                                <rect key="frame" x="0.0" y="550" width="334" height="44"/>
+                                                <rect key="frame" x="0.0" y="568" width="334" height="44"/>
                                                 <color key="backgroundColor" red="0.66666666666666663" green="0.90980392156862744" blue="0.9882352941176471" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="SEARCH FLIGHTS">
+                                                <buttonConfiguration key="configuration" style="filled" title="검색하기">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.73725490196078436" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="searchButtonTapped:" destination="AIN-9l-cS5" eventType="touchUpInside" id="zWP-2e-3NZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -187,7 +193,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="6vj-zd-j6g" secondAttribute="trailing" id="Kvr-Ts-m2i"/>
-                            <constraint firstItem="Gew-aa-13b" firstAttribute="top" secondItem="6vj-zd-j6g" secondAttribute="bottom" id="P7v-Yk-GYI"/>
+                            <constraint firstItem="Gew-aa-13b" firstAttribute="top" secondItem="6vj-zd-j6g" secondAttribute="bottom" constant="20" id="P7v-Yk-GYI"/>
                             <constraint firstItem="U24-VP-aCX" firstAttribute="trailing" secondItem="Gew-aa-13b" secondAttribute="trailing" constant="10" id="ciS-RI-DPD"/>
                             <constraint firstItem="Gew-aa-13b" firstAttribute="leading" secondItem="U24-VP-aCX" secondAttribute="leading" constant="10" id="eLG-Ak-inn"/>
                             <constraint firstItem="6vj-zd-j6g" firstAttribute="top" secondItem="1ks-Bd-4Hf" secondAttribute="top" id="se7-ib-gee"/>
@@ -199,6 +205,15 @@
                     <connections>
                         <outlet property="arrivalTextField" destination="hxP-MY-Dhy" id="bfO-Xg-oYe"/>
                         <outlet property="departTextField" destination="JYp-mB-Me5" id="lcX-cX-knF"/>
+                        <outlet property="searchButton" destination="VeZ-57-sMf" id="dcN-uv-ixJ"/>
+                        <outlet property="textLabelHeader" destination="yVa-Gk-Hfp" id="Cr7-M9-gUR"/>
+                        <outlet property="waySegmentControl" destination="tvZ-tI-y8z" id="9LX-Lg-3vM"/>
+                        <outletCollection property="textLabelCollection" destination="cSQ-NW-ef3" collectionClass="NSMutableArray" id="8Pw-pG-f51"/>
+                        <outletCollection property="textLabelCollection" destination="K2A-9i-43v" collectionClass="NSMutableArray" id="bvb-sx-zbC"/>
+                        <outletCollection property="textLabelCollection" destination="bwT-KK-8lz" collectionClass="NSMutableArray" id="6g6-5f-Ty4"/>
+                        <outletCollection property="textLabelCollection" destination="8dv-55-JDQ" collectionClass="NSMutableArray" id="NqW-fE-nDd"/>
+                        <outletCollection property="textLabelCollection" destination="IYg-P6-qYI" collectionClass="NSMutableArray" id="JNq-et-RLS"/>
+                        <outletCollection property="textLabelCollection" destination="NyJ-Ex-P94" collectionClass="NSMutableArray" id="eTK-9C-cI5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6pR-6Z-is8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

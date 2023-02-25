@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260B2F2929A9DB9C00AD10D8 /* SingleDay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 260B2F2829A9DB9C00AD10D8 /* SingleDay-Regular.ttf */; };
+		260B2F2C29A9E13100AD10D8 /* SearchFlightViewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B2F2B29A9E13100AD10D8 /* SearchFlightViewController+Style.swift */; };
+		260B2F2E29A9E17B00AD10D8 /* SearchFlightViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B2F2D29A9E17B00AD10D8 /* SearchFlightViewController+TextFieldDelegate.swift */; };
+		260B2F3029AA261C00AD10D8 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B2F2F29AA261C00AD10D8 /* DataResponse.swift */; };
+		260B2F3229AA268D00AD10D8 /* FlightDatum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B2F3129AA268D00AD10D8 /* FlightDatum.swift */; };
+		260B2F3929AA28FC00AD10D8 /* Bundle+APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B2F3829AA28FC00AD10D8 /* Bundle+APIKey.swift */; };
+		260B2F3B29AA2C7C00AD10D8 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B2F3A29AA2C7C00AD10D8 /* SearchAPI.swift */; };
+		260B2F3D29AA346500AD10D8 /* SearchCityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B2F3C29AA346500AD10D8 /* SearchCityController.swift */; };
 		2658E68A29A854A700AA5909 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658E68929A854A700AA5909 /* AppDelegate.swift */; };
 		2658E68C29A854A700AA5909 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658E68B29A854A700AA5909 /* SceneDelegate.swift */; };
 		2658E68E29A854A700AA5909 /* SearchFlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658E68D29A854A700AA5909 /* SearchFlightViewController.swift */; };
@@ -40,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260B2F2829A9DB9C00AD10D8 /* SingleDay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SingleDay-Regular.ttf"; sourceTree = "<group>"; };
+		260B2F2B29A9E13100AD10D8 /* SearchFlightViewController+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchFlightViewController+Style.swift"; sourceTree = "<group>"; };
+		260B2F2D29A9E17B00AD10D8 /* SearchFlightViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchFlightViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		260B2F2F29AA261C00AD10D8 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
+		260B2F3129AA268D00AD10D8 /* FlightDatum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDatum.swift; sourceTree = "<group>"; };
+		260B2F3829AA28FC00AD10D8 /* Bundle+APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+APIKey.swift"; sourceTree = "<group>"; };
+		260B2F3A29AA2C7C00AD10D8 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		260B2F3C29AA346500AD10D8 /* SearchCityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityController.swift; sourceTree = "<group>"; };
 		2658E68629A854A700AA5909 /* AirLetZest-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AirLetZest-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2658E68929A854A700AA5909 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2658E68B29A854A700AA5909 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +100,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260B2F2A29A9E11400AD10D8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				260B2F2B29A9E13100AD10D8 /* SearchFlightViewController+Style.swift */,
+				260B2F2D29A9E17B00AD10D8 /* SearchFlightViewController+TextFieldDelegate.swift */,
+				260B2F3829AA28FC00AD10D8 /* Bundle+APIKey.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		260B2F3329AA270800AD10D8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				260B2F3A29AA2C7C00AD10D8 /* SearchAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		2658E67D29A854A700AA5909 = {
 			isa = PBXGroup;
 			children = (
@@ -107,12 +141,13 @@
 		2658E68829A854A700AA5909 /* AirLetZest-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2658E6C029A8572400AA5909 /* Extension */,
-				2658E6BF29A8561800AA5909 /* Supporting Files */,
+				260B2F3329AA270800AD10D8 /* API */,
+				2658E6BC29A8560400AA5909 /* Model */,
+				260B2F2A29A9E11400AD10D8 /* Extension */,
 				2658E6BE29A8560F00AA5909 /* Controller */,
 				2658E6BD29A8560B00AA5909 /* View */,
-				2658E6BC29A8560400AA5909 /* Model */,
 				2658E69A29A854A900AA5909 /* Info.plist */,
+				2658E6BF29A8561800AA5909 /* Supporting Files */,
 			);
 			path = "AirLetZest-iOS";
 			sourceTree = "<group>";
@@ -138,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				2658E69229A854A800AA5909 /* AirLetZest_iOS.xcdatamodeld */,
+				260B2F2F29AA261C00AD10D8 /* DataResponse.swift */,
+				260B2F3129AA268D00AD10D8 /* FlightDatum.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +191,7 @@
 		2658E6BE29A8560F00AA5909 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				260B2F3C29AA346500AD10D8 /* SearchCityController.swift */,
 				2658E68D29A854A700AA5909 /* SearchFlightViewController.swift */,
 				2658E68929A854A700AA5909 /* AppDelegate.swift */,
 				2658E68B29A854A700AA5909 /* SceneDelegate.swift */,
@@ -170,16 +208,10 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2658E6C029A8572400AA5909 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		2658E6C229A85A0900AA5909 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				260B2F2829A9DB9C00AD10D8 /* SingleDay-Regular.ttf */,
 				2658E6C329A85A0900AA5909 /* Sunflower-Light.ttf */,
 				2658E6C429A85A0900AA5909 /* Sunflower-Bold.ttf */,
 				2658E6C529A85A0900AA5909 /* Sunflower-Medium.ttf */,
@@ -296,6 +328,7 @@
 				2658E6C729A85A0A00AA5909 /* Sunflower-Bold.ttf in Resources */,
 				2658E69629A854A900AA5909 /* Assets.xcassets in Resources */,
 				2658E69129A854A700AA5909 /* Main.storyboard in Resources */,
+				260B2F2929A9DB9C00AD10D8 /* SingleDay-Regular.ttf in Resources */,
 				2658E6C829A85A0A00AA5909 /* Sunflower-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,8 +355,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2658E69429A854A800AA5909 /* AirLetZest_iOS.xcdatamodeld in Sources */,
+				260B2F3229AA268D00AD10D8 /* FlightDatum.swift in Sources */,
 				2658E68E29A854A700AA5909 /* SearchFlightViewController.swift in Sources */,
+				260B2F3929AA28FC00AD10D8 /* Bundle+APIKey.swift in Sources */,
+				260B2F2E29A9E17B00AD10D8 /* SearchFlightViewController+TextFieldDelegate.swift in Sources */,
+				260B2F3D29AA346500AD10D8 /* SearchCityController.swift in Sources */,
+				260B2F3B29AA2C7C00AD10D8 /* SearchAPI.swift in Sources */,
+				260B2F3029AA261C00AD10D8 /* DataResponse.swift in Sources */,
 				2658E68A29A854A700AA5909 /* AppDelegate.swift in Sources */,
+				260B2F2C29A9E13100AD10D8 /* SearchFlightViewController+Style.swift in Sources */,
 				2658E68C29A854A700AA5909 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
